@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import  CategorySlice from "../Classified/CategorySlice";
-import ProductSlice from "../Classified/ProductSlice";
-import UserSlice from "../Classified/UserSlice";
+import EventSlice from "../Booking/EventSlice.js"
+import  ReviewSlice from "../Booking/ReviewSlice"
+import BookingSlice from "../Booking/BookingSlice"
+import UserSlice from "../Booking/UserSlice"
 const store = configureStore({
   reducer: {
-    categories:CategorySlice,
+    reviews:ReviewSlice,
     user:UserSlice,
-    products:ProductSlice
+    bookings:BookingSlice,
+    events:EventSlice
   },
 });
 export default store;

@@ -7,7 +7,8 @@ import {Provider} from "react-redux"
 import './index.css'; 
 import store from"./Store/ConfigureStore.js"
 // import RecApp from "./Recipe/RecApp.js";
-import ClassifiedApp from './Classified/ClassifiedApp.js';
+// import ClassifiedApp from './Classified/ClassifiedApp.js';
+import BookingApp from './Booking/BookingApp.js';
 console.log(store.getState())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +17,8 @@ root.render(
     <BrowserRouter>
     {/* <RecApp/>
      */}
-     <ClassifiedApp/>
+     {/* <ClassifiedApp/> */}
+     <BookingApp/>
     </BrowserRouter>
   </Provider>
 );
